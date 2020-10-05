@@ -1,0 +1,766 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage[normalem]{ulem}
+\usepackage{soul}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{extarrows}
+\usepackage{graphicx}
+\usepackage[backend=biber,
+style=numeric,
+sorting=none,
+isbn=false,
+doi=false,
+url=false,
+]{biblatex}\addbibresource{bibliography.bib}
+
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{multicol}
+\usepackage{tabto}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[toc,page]{appendix}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+\tikzset{>={Latex[width=1.5mm,length=2mm]}}
+\usepackage{flowchart}\usepackage[paperheight=11.0in,paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,headheight=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,}
+
+\urlstyle{same}
+
+\renewcommand{\_}{\kern-1.5pt\textunderscore\kern-1.5pt}
+
+ %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
+
+% 1) Section
+% 1.1) SubSection
+% 1.1.1) SubSubSection
+% 1.1.1.1) Paragraph
+% 1.1.1.1.1) Subparagraph
+
+
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+
+ %%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
+
+
+\setlistdepth{9}
+\renewlist{enumerate}{enumerate}{9}
+		\setlist[enumerate,1]{label=\arabic*)}
+		\setlist[enumerate,2]{label=\alph*)}
+		\setlist[enumerate,3]{label=(\roman*)}
+		\setlist[enumerate,4]{label=(\arabic*)}
+		\setlist[enumerate,5]{label=(\Alph*)}
+		\setlist[enumerate,6]{label=(\Roman*)}
+		\setlist[enumerate,7]{label=\arabic*}
+		\setlist[enumerate,8]{label=\alph*}
+		\setlist[enumerate,9]{label=\roman*}
+
+\renewlist{itemize}{itemize}{9}
+		\setlist[itemize]{label=$\cdot$}
+		\setlist[itemize,1]{label=\textbullet}
+		\setlist[itemize,2]{label=$\circ$}
+		\setlist[itemize,3]{label=$\ast$}
+		\setlist[itemize,4]{label=$\dagger$}
+		\setlist[itemize,5]{label=$\triangleright$}
+		\setlist[itemize,6]{label=$\bigstar$}
+		\setlist[itemize,7]{label=$\blacklozenge$}
+		\setlist[itemize,8]{label=$\prime$}
+
+\setlength{\topsep}{0pt}\setlength{\parindent}{0pt}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%% Table No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[H]
+ 			\centering
+ 		\begin{small}
+\begin{tabular}{p{6.3in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{6.3in}|}{\cellcolor[HTML]{D9D9D9}\textbf{ML for Cybersecurity Program Schedule -- \textit{Outline}}} \\
+\hhline{-}
+%row no:2
+\multicolumn{1}{|p{6.3in}|}{Date Created: August 24, 2020} \\
+\hhline{-}
+%row no:3
+\multicolumn{1}{|p{6.3in}|}{Scheduled date for completion: September 21 (TBC)} \\
+\hhline{-}
+%row no:4
+\multicolumn{1}{|p{6.3in}|}{\textbf{Prerequisites: } \par To be best prepared to succeed in this program, students should have basic familiarity with: \par \begin{itemize}
+	\item Programming: Proficiency with one or more programming languages such as Python/C/C++/MATLAB/Java/JavaScript  \par 	\item Basic Probability and Statistics: You should know the basics of probabilities, gaussian distributions, mean, and standard deviation \par 	\item Linear Algebra: You should be comfortable with matrix/vector notation and operations \par 	\item Computer Security: Basic knowledge of cybersecurity or applied computer security 
+\end{itemize} \par } \\
+\hhline{-}
+%row no:5
+\multicolumn{1}{|p{6.3in}|}{\textbf{Target Audience: } \par Information security managers, engineers, and professionals whose role includes working in applied computer security or cybersecurity. \par Prior knowledge of machine learning is not required. \par } \\
+\hhline{-}
+%row no:6
+\multicolumn{1}{|p{6.3in}|}{\textbf{Course Registration Survey: } \par \textbf{Title/organization/ industry/years of experience/ highest degree obtained/major/ other coursework } \par Rate your level of experience with the listed skills. On our scale, 1 = no knowledge about this area, and 5 = expert knowledge in this area. \par \begin{itemize}
+	\item Web (HTML/Javascript) \par 	\item Java \par 	\item Python  \par 	\item C/C++ \par 	\item Databases  \par 	\item Data Analytics \par 	\item Jupyter Notebooks \par 	\item Linear Algebra \par 	\item Machine Learning  \par 	\item Computer Security 
+\end{itemize} \par Please describe why you are interested in this program and what you hope to achieve by participating in it. \par What topics or concepts are you most interested in discussing in this course?  \par } \\
+\hhline{-}
+
+\end{tabular}
+\end{small}
+ \end{table}
+
+%%%%%%%%%%%%%%%%%%%% Table No: 1 ends here %%%%%%%%%%%%%%%%%%%%
+
+\textbf{Timeline: }\par
+
+\begin{enumerate}
+	\item \colorbox{Yellow}{September 21st: Program Outcomes (2-3)}, \colorbox{Yellow}{Module Outlin}e $\&$  Learning Objectives (2-3) Finalized \par
+
+	\item October 5th: Slides Finished \par
+
+	\item Oct.\ 12th Video Recording at Home Begins (Suggestion to begin recording Module 1 Video the week of October 5 to build in more feedback and editing time)  \par
+
+	\item Course materials available online ($ \sim $  November 3)\par
+
+	\item Course begins: Tuesday/Thursday 7 - 9 pm (November 10, 12, 17, 19) \par
+
+	\item Total Instruction Time per Session - 2 hours \par
+
+\begin{enumerate}
+	\item Syn/Live Session Time: $ \sim $  2 Hour \par
+
+\setlength{\parskip}{9.96pt}
+	\item Asynchronous Content: $ \sim $  1 Hour\textbf{ \textcolor[HTML]{500050}{ }}
+\end{enumerate}
+\end{enumerate}\par
+
+\textbf{Course Delivery: }\par
+
+Remote instruction, a mix of asynchronous and synchronous learning activities\textbf{: }\par
+
+\begin{itemize}
+	\item \colorbox{Yellow}{\parbox{\linewidth}{Recorded videos, corresponding to the module content (about 20-45 minutes of video content per lecture slot).}}\par
+
+	\item Online Zoom Q$\&$ A/discussion and case study sections to further discuss the content of each lecture in more depth/as a class ($ \sim $  90 mins)\par
+
+	\item Additional opportunities for peer networking and 1:1 time with faculty ($ \sim $  30 mins)\par
+
+	\item Final project: Case study development 
+\end{itemize}\par
+
+
+
+\textbf{Lecture Format: }\par
+
+\begin{itemize}
+	\item UCPE template in ppt \par
+
+	\item Intro slide includes CDAC logo \par
+
+	\item Include handwritten notes (via Goodnotes?) recorded during lecture (as needed)
+\end{itemize}\par
+
+
+
+Recording at Home - UCPE to send details on equipment and recording applications \par
+
+
+
+\textbf{Program Outcomes:} \par
+
+
+
+\setlength{\parskip}{12.0pt}
+
+By the end of this program, learners will be able to:\par
+
+\begin{itemize}
+\item Understand basic concepts for statistical modeling, including principles for model selection for supervised and unsupervised learning tasks in the context of cybersecurity.  
+\item Select the most appropriate models for various cybersecurity scenarios, such as malware classification, botnet detection, and intrusion detection.
+\item  Detect and defend against adversarial attacks on machine learning models in cybersecurity settings at both training and test times
+\item  Identify and understand means of navigating legal and ethical challenges that emerge from gathering data about human subjects and using it to build machine-learning models
+\end{itemize}
+
+Pre-Module 1: Introduction to course video (10 mins)\par
+
+\begin{itemize}
+	\item Why take this course? (introduction to topic/motivating use cases) %Nick to introduce? 3mins \par
+
+	\item Faculty Introductions %3 mins per faculty -- introduce background/research focus areas, and why you are interested in this topic, no slides \par
+
+	\item Description of program outcomes %Yuxin \par
+
+	\item Describe learning environment (pre-reading, survey, sync sessions) % Blase but hold off until later in October 
+\end{itemize}\par
+
+ %%%%%%%%%%%%  Starting New Page here %%%%%%%%%%%%%%
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%% Table No: 2 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.1in}p{5.0in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.1in}}{\cellcolor[HTML]{EFEFEF}\textbf{Module 1 }} & 
+\multicolumn{1}{|p{5.0in}|}{\cellcolor[HTML]{EFEFEF}November 10, 2020, 7-9pm CT } \\
+\hhline{--}
+%row no:2
+\multicolumn{1}{|p{1.1in}}{\cellcolor[HTML]{EFEFEF}\textbf{Topic: }} & 
+\multicolumn{1}{|p{5.0in}|}{\cellcolor[HTML]{EFEFEF}Foundations of Machine Learning and Data Science for Security} \\
+\hhline{--}
+%row no:3
+\multicolumn{1}{|p{1.1in}}{\textbf{Description: }} & 
+\multicolumn{1}{|p{5.0in}|}{A module focused on machine learning fundamentals, with applications to security. This module will offer an introduction to the data science pipeline, and teach fundamental building blocks, from data ingestion and feature engineering to machine learning model selection. } \\
+\hhline{--}
+%row no:4
+\multicolumn{1}{|p{1.1in}}{\textbf{Faculty Leads: }} & 
+\multicolumn{1}{|p{5.0in}|}{Yuxin Chen (Lead), Nick Feamster } \\
+\hhline{--}
+%row no:5
+\multicolumn{1}{|p{1.1in}}{\textbf{Asynchronous Content:}} & 
+\multicolumn{1}{|p{5.0in}|}{\begin{itemize}
+	\item \colorbox{Yellow}{Pre-course survey} to understand student background, familiarity with concepts, what problems/topics they are interested learning about.  \par 	\item \colorbox{Yellow}{Pre-recorded video lectures\textbf{ }($ \sim $  20- 45 mins -- to be watched ahead of sync)} \par 	\item Videos are broken up into shorter 5-10 min videos focusing on:  \par 	\item Industry use cases (motivation for concept/topic) \par 	\item Fundamental concepts  \par 	\item Applications \par 	\item Failure cases (real-life examples where the application of ML to security has failed and the dangers of such failures) \par 	\item \colorbox{Yellow}{Post-video survey/quiz} to check for understanding/provide students with opportunity to ask questions that can be answered synchronously in class 
+\end{itemize}} \\
+\hhline{--}
+%row no:6
+\multicolumn{1}{|p{1.1in}}{\textbf{Synchronous Content: }} & 
+\multicolumn{1}{|p{5.0in}|}{\begin{itemize}
+	\item Group discussion of core concepts and how they relate to students experiences in industry/work \par 	\item Case studies/group work using jupyter notebooks/dummy data to provide hands on experiences with concepts  \par 	\item Networking -- potentially pair students based on skills/background 
+\end{itemize}} \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+
+%%%%%%%%%%%%%%%%%%%% Table No: 2 ends here %%%%%%%%%%%%%%%%%%%%
+
+\textbf{Module 1 Learning Objectives $\&$  Module Outline: }\par
+
+\textit{\uline{Course description}}\par
+
+\begin{itemize}
+	\item A module focused on machine learning fundamentals, with applications to security. This module will offer an introduction to the data science pipeline, and teach fundamental building blocks, from data ingestion and feature engineering to machine learning model selection. \par
+\end{itemize}
+
+\textit{\uline{Learning objectives}}:\par
+
+\begin{itemize}
+
+	\item Understand basic machine learning ideas $\&$  concepts\par
+
+\begin{itemize}
+	\item \textit{\textcolor[HTML]{4A86E8}{(be more specific on the learning goals, give examples)}}\par
+
+\end{itemize}
+	\item Learn to use statistical tools to analyze machine learning models\par
+
+	\item Understanding the role of machine learning in data-driven cybersecurity\par
+
+	\item Have some experience applying machine learning algorithms on cybersecurity applications
+\end{itemize}\par
+
+\textit{\uline{Asynchronous video outline}}:\par
+
+\begin{itemize}
+	\item (10 min) Introduction to the statistical learning framework; feature, label, risk and loss function.\par
+
+	\item (5 min) Bias variance tradeoff, regularization (todo: add cybersecurity apps)\par
+
+	\item (10 min) Introduction to supervised learning, model choices $\&$  failure cases;\par
+
+\begin{itemize}
+	\item logistic regression (network traffic; DNS response queries (different features))\par
+
+	\item Naive Bayes (example of generative model)\par
+
+	\item neural network\par
+
+	\item Example: malware classification\par
+
+
+\end{itemize}
+	\item (10 min) Introduction to unsupervised anomaly detection\par
+
+\begin{itemize}
+	\item Generative/ discriminative models\par
+
+	\item PCA/Clustering as a special case of Bayes classifier (discriminative)\par
+
+	\item Example: intrusion detection\par
+
+
+\end{itemize}
+	\item (5-10min) Demo of Jupyter notebook example
+\end{itemize}\par
+
+\textbf{Module 1: Synchronous Schedule (via Zoom): }\par
+
+%%%%%%%%%%%%%%%%%%%% Table No: 3 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.33in}p{0.86in}p{3.72in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.33in}}{\textbf{Topic}} & 
+\multicolumn{1}{|p{0.86in}}{\textbf{Time}} & 
+\multicolumn{1}{|p{3.72in}|}{\textbf{Notes: }} \\
+\hhline{---}
+%row no:2
+\multicolumn{1}{|p{1.33in}}{Introduction/ \par Core Concepts Recap } & 
+\multicolumn{1}{|p{0.86in}}{15 min} & 
+\multicolumn{1}{|p{3.72in}|}{\begin{itemize}
+	\item Introduction \par 	\item Recap of basic concepts in videos \par 	\item Group discussion about experience with module concepts in industry/work experience 
+\end{itemize}} \\
+\hhline{---}
+%row no:3
+\multicolumn{1}{|p{1.33in}}{Introduction to case study/group work} & 
+\multicolumn{1}{|p{0.86in}}{5 min} & 
+\multicolumn{1}{|p{3.72in}|}{} \\
+\hhline{---}
+%row no:4
+\multicolumn{1}{|p{1.33in}}{Simulation/ \par Case study/Group Work} & 
+\multicolumn{1}{|p{0.86in}}{40 min} & 
+\multicolumn{1}{|p{3.72in}|}{\begin{itemize}
+	\item TBD hands-on lab leveraging virtual case study (Jupyter Notebooks) \par 	\item Divide students into Zoom breakout rooms  \par 	\item Pair students based on skill levels 
+\end{itemize}} \\
+\hhline{---}
+%row no:5
+\multicolumn{1}{|p{1.33in}}{Break} & 
+\multicolumn{1}{|p{0.86in}}{10 min} & 
+\multicolumn{1}{|p{3.72in}|}{} \\
+\hhline{---}
+%row no:6
+\multicolumn{1}{|p{1.33in}}{Discussion/ \par Wrap up } & 
+\multicolumn{1}{|p{0.86in}}{20 min} & 
+\multicolumn{1}{|p{3.72in}|}{} \\
+\hhline{---}
+%row no:7
+\multicolumn{1}{|p{1.33in}}{\textit{\colorbox{Yellow}{Networking Opportunity }}} & 
+\multicolumn{1}{|p{0.86in}}{\textit{30 min}} & 
+\multicolumn{1}{|p{3.72in}|}{\begin{itemize}
+	\item \textit{TBD Virtual Happy Hour /speed meet-a-thon} \par 	\item \textit{Potentially led by class facilitator? }
+\end{itemize}} \\
+\hhline{---}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 3 ends here %%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%% Table No: 4 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.1in}p{5.0in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.1in}}{\cellcolor[HTML]{EFEFEF}\textbf{Module 2}} & 
+\multicolumn{1}{|p{5.0in}|}{\cellcolor[HTML]{EFEFEF}November 12, 2020, 7-9pm CT} \\
+\hhline{--}
+%row no:2
+\multicolumn{1}{|p{1.1in}}{\cellcolor[HTML]{EFEFEF}\textbf{Topic: }} & 
+\multicolumn{1}{|p{5.0in}|}{\cellcolor[HTML]{EFEFEF}Data-Driven Network and Computer Security} \\
+\hhline{--}
+%row no:3
+\multicolumn{1}{|p{1.1in}}{\textbf{Description: }} & 
+\multicolumn{1}{|p{5.0in}|}{A system-oriented security course, with grounding in fundamentals that we expect our audience will be familiar with, pivoting towards more data- driven and oriented concepts. For example, we aim to bridge the divide between familiar concepts such as signature-oriented anomaly detection to statistical anomaly detection. The course will also provide training in the underlying mechanics of machine learning as applied to practical problems in cybersecurity.} \\
+\hhline{--}
+%row no:4
+\multicolumn{1}{|p{1.1in}}{\textbf{Faculty Leads:}} & 
+\multicolumn{1}{|p{5.0in}|}{Nick Feamster (Lead), Blase Ur} \\
+\hhline{--}
+%row no:5
+\multicolumn{1}{|p{1.1in}}{\textbf{Asynchronous Content:}} & 
+\multicolumn{1}{|p{5.0in}|}{\begin{itemize}
+	\item \colorbox{Yellow}{Pre-recorded video lectures\textbf{ }($ \sim $  20-45 mins) per outline below.}
+\end{itemize}} \\
+\hhline{--}
+%row no:6
+\multicolumn{1}{|p{1.1in}}{\textbf{Synchronous Content: }} & 
+\multicolumn{1}{|p{5.0in}|}{\begin{itemize}
+	\item Q$\&$ A/Review of basic technical concepts \par 	\item Discussion of basic kinds of cyberattacks \par 	\item Hands-On activity with network measurement, bringing packet capture data into Python notebook and asking basic questions \par 	\item Networking 
+\end{itemize}} \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 4 ends here %%%%%%%%%%%%%%%%%%%%
+
+\textbf{Course Description:}\par
+
+This module will familiarize students with basic concepts in computer networks, applied network security, and application of Internet measurement and machine learning to network security problems. Students will gain knowledge of the basic Internet concepts and protocols, including Internet transport protocols (e.g., TCP/IP), Internet routing protocols (e.g., Border Gateway Protocol), and various network measurement techniques for network monitoring, security, and outlier/intrusion detection. \par
+
+\textbf{Learning Objectives:}\par
+
+In this module, students will learn the following concepts:\par
+
+\begin{itemize}
+	\item Internet architecture and basic concepts:\par
+
+\begin{itemize}
+	\item The structure of Internet traffic\par
+
+	\item Internet routing and forwarding\par
+
+\end{itemize}
+	\item Basic Internet protocols:\par
+
+\begin{itemize}
+	\item Internet traffic link, application, and transport layer: HTTPS, TCP/IP, Ethernet\par
+
+	\item Internet naming: Domain Name System\par
+
+\end{itemize}
+	\item Measuring Internet traffic behavior and anomalies\par
+
+\begin{itemize}
+	\item Tools: Packet capture, IPFIX/Netflow, Scanning/Probing\par
+
+	\item Techniques: Sampling\par
+
+
+\end{itemize}
+	\item Applications of machine learning to network security\par
+
+\begin{itemize}
+	\item Supervised learning examples: Spam filtering, Botnet detection, Phishing\par
+
+	\item Outlier detection: Denial of service attacks
+\end{itemize}
+\end{itemize}\par
+
+\textbf{Asynchronous Video Outline:}\par
+
+\begin{itemize}
+	\item (5 min) Introduction to the Internet architecture/Packet Switching\par
+
+	\item (10 minutes) Structure of Internet traffic\par
+
+	\item (5 minutes) Internet routing and forwarding: IP, BGP\par
+
+	\item (5 minutes) Domain Name System\par
+
+	\item (10 minutes) Internet measurement: Packet capture, NetFlow\par
+
+	\item (10 minutes) Applications of machine learning to network security\\
+
+\end{itemize}\par
+
+\textbf{Module 2: Synchronous Schedule (via Zoom): }\par
+
+ %%%%%%%%%%%%  Starting New Page here %%%%%%%%%%%%%%
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%% Table No: 5 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.1in}p{5.0in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.1in}}{\cellcolor[HTML]{EFEFEF}\textbf{Module 3}} & 
+\multicolumn{1}{|p{5.0in}|}{\cellcolor[HTML]{EFEFEF}November 17, 2020, 7-9pm CT } \\
+\hhline{--}
+%row no:2
+\multicolumn{1}{|p{1.1in}}{\cellcolor[HTML]{EFEFEF}\textbf{Topic: }} & 
+\multicolumn{1}{|p{5.0in}|}{\cellcolor[HTML]{EFEFEF}Machine Learning in the presence of adversaries } \\
+\hhline{--}
+%row no:3
+\multicolumn{1}{|p{1.1in}}{\textbf{Description: }} & 
+\multicolumn{1}{|p{5.0in}|}{A course involving evasion and adversarial behavior in machine learning for security, including considerations of adversarial attempts to evade detection, pollution attacks on classifiers, backdoors in neural networks, and related topics in adversarial ML.} \\
+\hhline{--}
+%row no:4
+\multicolumn{1}{|p{1.1in}}{\textbf{Faculty leads: }} & 
+\multicolumn{1}{|p{5.0in}|}{Yuxin Chen (Co-Lead), Nick Feamster (Lead), Blase Ur} \\
+\hhline{--}
+%row no:5
+\multicolumn{1}{|p{1.1in}}{\textbf{Asynchronous Content:}} & 
+\multicolumn{1}{|p{5.0in}|}{\begin{itemize}
+	\item \colorbox{Yellow}{TBD Pre-recorded video lectures\textbf{ }($ \sim $  20-45 mins) per outline below}
+\end{itemize}} \\
+\hhline{--}
+%row no:6
+\multicolumn{1}{|p{1.1in}}{\textbf{Synchronous Content: }} & 
+\multicolumn{1}{|p{5.0in}|}{\begin{itemize}
+	\item Jupyter Lab exercise (likely from CICIDS) exploring DoS attacks.  \par 	\item Application of supervised/unsupervised learning techniques. \par 	\item Simple example of evasion attacks (e.g., low-rate DDoS) \par 	\item Networking 
+\end{itemize}} \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 5 ends here %%%%%%%%%%%%%%%%%%%%
+
+\textbf{Course Description:}\par
+
+Given background on the applications and use of machine learning for security applications (e.g., spam detection, botnet detection, attack detection), this module will explore contexts where an adversary may seek to evade detection by confusing machine learning algorithms, either at training time or at testing time. The course module will provide a basic overview of adversarial machine learning, examples where adversaries can interfere with learning techniques in security contexts, and the current state of the art for adversarial machine learning—both attacks and defenses.\par
+
+
+\textbf{Learning Objectives:}\par
+
+Students in this module will learn the following:\par
+
+\begin{itemize}
+	\item Adversarial attacks on machine learning\par
+
+\begin{itemize}
+	\item Training and testing time attacks\par
+
+	\item Pollution attacks (training time)\par
+
+	\item Evasion attacks (test time)\par
+
+
+\end{itemize}
+	\item General instances of adversarial machine learning attacks and defenses\par
+
+\begin{itemize}
+	\item Evading detection in intrusion detection\par
+
+	\item Pollution attacks in personalization\par
+
+	\item Backdoors in neural networks
+\end{itemize}
+\end{itemize}\par
+
+
+
+\textbf{Asynchronous Video Outline:}\par
+
+
+
+\begin{itemize}
+	\item (5 minutes) Introduction to adversarial machine learning / security mindset\par
+
+	\item (5 minutes) Threat models\par
+
+	\item (10 minutes) Training time attacks: Training set pollution\par
+
+	\item (5 minutes) Application: Distorting personalization\par
+
+	\item (10 minutes) Testing time attacks: Test set evasion\par
+
+	\item (5 minutes) Application: Evading intrusion/attack detection\par
+
+	\item (5 minutes) Backdoors in Neural Networks\par
+
+	\item (5 minutes) Defending against adversaries
+\end{itemize}\par
+
+%%%%%%%%%%%%%%%%%%%% Table No: 6 starts here %%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.22in}p{4.87in}}
+%row no:1
+\multicolumn{1}{p{1.22in}}{\cellcolor[HTML]{EFEFEF}\textbf{Module 4}} & 
+\multicolumn{1}{p{4.87in}}{\cellcolor[HTML]{EFEFEF}\textbf{November 19, 2020, 7-9pm CT}} \\
+\hhline{~~}
+%row no:2
+\multicolumn{1}{p{1.22in}}{\cellcolor[HTML]{EFEFEF}\textbf{Topic:}} & 
+\multicolumn{1}{p{4.87in}}{\cellcolor[HTML]{EFEFEF}\textbf{Ethics, Fairness, Responsibility, and Transparency in Data-Driven Cybersecurity}} \\
+\hhline{~~}
+%row no:3
+\multicolumn{1}{p{1.22in}}{\textbf{Description:}} & 
+\multicolumn{1}{p{4.87in}}{\textbf{This module will engage students in hands-on programming assignments, case studies, and discussions to expose them to ethical considerations associated with automated cybersecurity decision-making.}} \\
+\hhline{~~}
+%row no:4
+\multicolumn{1}{p{1.22in}}{\textbf{Faculty Lead:}} & 
+\multicolumn{1}{p{4.87in}}{\textbf{Blase Ur (Lead)}} \\
+\hhline{~~}
+%row no:5
+\multicolumn{1}{p{1.22in}}{\textbf{Asynchronous Content:}} & 
+\multicolumn{1}{p{4.87in}}{\textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Asynchronous video 1: Data cleaning and handling missing data ($ \sim $ 5 minutes)}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Asynchronous video 2: Fairness in cybersecurity ML models ($ \sim $ 10 minutes)}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Asynchronous video 3: Transparent and explainable ML models for cybersecurity ($ \sim $ 5 minutes)}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Asynchronous video 4: Defining and actualizing privacy ($ \sim $ 10 minutes)}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Asynchronous video 5: Collecting data from human subjects ($ \sim $ 5 minutes)}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Asynchronous video 6: The pitfalls of anonymization ($ \sim $ 5 minutes)}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Asynchronous video 7: Responsible data lifecycles ($ \sim $ 5 minutes)}}} \\
+\hhline{~~}
+%row no:6
+\multicolumn{1}{p{1.22in}}{\textbf{Synchronous Content:}} & 
+\multicolumn{1}{p{4.87in}}{\textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Discussion of privacy definitions and how to actualize privacy for cybersecurity applications in industry}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Hands-on exercise in Jupyter Labs to build a fair and transparent and ethical ML model for detecting fraudulent accounts}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Discussion of the implications of module building for regulatory questions, reputation, and external costs}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Final networking opportunity / happy hour}}} \\
+\hhline{~~}
+
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%% Table No: 6 ends here %%%%%%%%%%%%%%%%%%%%
+
+\textbf{Module 4 Learning Objectives $\&$  Module Outline:}\par
+
+\textbf{ }\par
+
+\textbf{\textit{\uline{Course description}}}\par
+
+\begin{adjustwidth}{0.5in}{0.0in}
+\textbf{-}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\ \  \tab A module focused on the ethical questions surround the use of data to build ML models for cybersecurity. The module will introduce current conceptualizations of both fairness and privacy, discuss techniques for understanding and explaining models, and build an understanding for the many implications of using ML models for cybersecurity.}\par}\par
+
+\end{adjustwidth}
+
+\textbf{ }\par
+
+\textbf{\textit{\uline{Learning objectives}}:}\par
+
+\begin{adjustwidth}{0.5in}{0.0in}
+\textbf{-}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\ \  \tab Understand how and when ethical issues arise in using data to build ML models for cybersecurity}\par}\par
+
+\end{adjustwidth}
+
+\begin{adjustwidth}{0.5in}{0.0in}
+\textbf{-}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\ \  \tab Learn about key fairness considerations and debates over defining fairness}\par}\par
+
+\end{adjustwidth}
+
+\begin{adjustwidth}{0.5in}{0.0in}
+\textbf{-}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\ \  \tab Understand the implications of legal, philosophical, and technical conceptualizations of privacy for data collection, data retention, and model building}\par}\par
+
+\end{adjustwidth}
+
+\begin{adjustwidth}{0.5in}{0.0in}
+\textbf{-}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\ \  \tab Gain an appreciation for the personhood of data subjects and what this implies for data lifecycles}\par}\par
+
+\end{adjustwidth}
+
+\begin{adjustwidth}{0.5in}{0.0in}
+\textbf{-}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\ \  \tab Have hands-on experience trying to build an ML model for detecting fraudulent accounts where the straightforward solutions lead to profound ethical issues}\par}\par
+
+\end{adjustwidth}
+
+
+
+\textbf{\textit{\uline{Asynchronous video outline}}:}\par
+
+\begin{adjustwidth}{0.5in}{0.0in}
+\textbf{-}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\ \  \tab Asynchronous video 1: Data cleaning and handling missing data ($ \sim $ 5 minutes)}\par}\par
+
+\end{adjustwidth}
+
+\begin{adjustwidth}{0.5in}{0.0in}
+\textbf{-}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\ \  \tab Asynchronous video 2: Fairness in cybersecurity ML models ($ \sim $ 10 minutes)}\par}\par
+
+\end{adjustwidth}
+
+\begin{adjustwidth}{0.5in}{0.0in}
+\textbf{-}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\ \  \tab Asynchronous video 3: Transparent and explainable ML models for cybersecurity ($ \sim $ 5 minutes)}\par}\par
+
+\end{adjustwidth}
+
+\begin{adjustwidth}{0.5in}{0.0in}
+\textbf{-}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\ \  \tab Asynchronous video 4: Defining and actualizing privacy ($ \sim $ 10 minutes)}\par}\par
+
+\end{adjustwidth}
+
+\begin{adjustwidth}{0.5in}{0.0in}
+\textbf{-}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\ \  \tab Asynchronous video 5: Collecting data from human subjects ($ \sim $ 5 minutes)}\par}\par
+
+\end{adjustwidth}
+
+\begin{adjustwidth}{0.5in}{0.0in}
+\textbf{-}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\ \  \tab Asynchronous video 6: The pitfalls of anonymization ($ \sim $ 5 minutes)}\par}\par
+
+\end{adjustwidth}
+
+\begin{adjustwidth}{0.5in}{0.0in}
+\textbf{-}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\ \  \tab Asynchronous video 7: Responsible data lifecycles ($ \sim $ 5 minutes)}\par}\par
+
+\end{adjustwidth}
+
+\textbf{ }\par
+
+\textbf{ }\par
+
+\textbf{Module 4: Synchronous Schedule (via Zoom):}\par
+
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 7 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.4in}p{0.91in}p{3.58in}}
+%row no:1
+\multicolumn{1}{p{1.4in}}{\textbf{Topic}} & 
+\multicolumn{1}{p{0.91in}}{\textbf{Time}} & 
+\multicolumn{1}{p{3.58in}}{\textbf{Notes:}} \\
+\hhline{~~~}
+%row no:2
+\multicolumn{1}{p{1.4in}}{\textbf{Introduction/} \par \textbf{Core Concepts Recap}} & 
+\multicolumn{1}{p{0.91in}}{\textbf{15 min}} & 
+\multicolumn{1}{p{3.58in}}{\textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Introduction}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Recap of basic concepts in videos}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Questions about videos}}} \\
+\hhline{~~~}
+%row no:3
+\multicolumn{1}{p{1.4in}}{\textbf{Discussion of privacy in context}} & 
+\multicolumn{1}{p{0.91in}}{\textbf{15 min}} & 
+\multicolumn{1}{p{3.58in}}{\textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Focus on how philosophical definitions of privacy apply to cybersecurity challenges}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Discuss whether differential privacy is a panacea ($ \ldots $ it’s not)}}} \\
+\hhline{~~~}
+%row no:4
+\multicolumn{1}{p{1.4in}}{\textbf{Introduction to case study/group work}} & 
+\multicolumn{1}{p{0.91in}}{\textbf{5 min}} & 
+\multicolumn{1}{p{3.58in}}{\textbf{ }} \\
+\hhline{~~~}
+%row no:5
+\multicolumn{1}{p{1.4in}}{\textbf{Simulation/} \par \textbf{Case study/Group Work}} & 
+\multicolumn{1}{p{0.91in}}{\textbf{40 min}} & 
+\multicolumn{1}{p{3.58in}}{\textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Hands-on lab about building a model to detect fraudulent accounts leveraging virtual case study (Jupyter Notebooks)}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Divide students into Zoom breakout rooms}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Pair students based on skill levels}}} \\
+\hhline{~~~}
+%row no:6
+\multicolumn{1}{p{1.4in}}{\textbf{Break}} & 
+\multicolumn{1}{p{0.91in}}{\textbf{10 min}} & 
+\multicolumn{1}{p{3.58in}}{\textbf{ }} \\
+\hhline{~~~}
+%row no:7
+\multicolumn{1}{p{1.4in}}{\textbf{Discussion}} & 
+\multicolumn{1}{p{0.91in}}{\textbf{15 min}} & 
+\multicolumn{1}{p{3.58in}}{\textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Discuss the externalities and implications of errors in ML models for cybersecurity from regulatory actions to bad press to increased calls to the help desk to issues with customer retention}}} \\
+\hhline{~~~}
+%row no:8
+\multicolumn{1}{p{1.4in}}{\textbf{Course Wrap up}} & 
+\multicolumn{1}{p{0.91in}}{\textbf{10 min}} & 
+\multicolumn{1}{p{3.58in}}{\textbf{ }} \\
+\hhline{~~~}
+%row no:9
+\multicolumn{1}{p{1.4in}}{\textbf{Networking Opportunity}} & 
+\multicolumn{1}{p{0.91in}}{\textbf{10 min}} & 
+\multicolumn{1}{p{3.58in}}{\textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  TBD Virtual Happy Hour /speed meet-a-thon}} \par \textbf{l}{\fontsize{7pt}{8.4pt}\selectfont \textbf{\  Potentially led by class facilitator?}}} \\
+\hhline{~~~}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 7 ends here %%%%%%%%%%%%%%%%%%%%
+
+\textbf{ }\par
+
+
+
+
+\printbibliography
+\end{document}
